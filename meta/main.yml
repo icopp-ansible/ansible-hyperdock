@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Ian Copp
+  description: Install Hyperdock via Homebrew Cask.
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+    - name: MacOSX
+      versions:
+        - all
+  galaxy_tags:
+    - application
+
+dependencies:
+  - role: icopp.homebrew-cask
+    when: ansible_os_family == "Darwin"
